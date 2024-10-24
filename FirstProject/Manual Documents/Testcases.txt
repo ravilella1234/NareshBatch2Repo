@@ -1,0 +1,96 @@
+
+
+Test Case for gmail login
+--------------------------
+1) Test Case for Email field
+2) Test Case for Password field
+3) Test Case for forgot email
+4) Test Case for forgot password
+
+Test Case on Gmail Email Login Page:
+------------------------------------        
+1) Verify tht "Email or Phone" field is preent on the page or not
+2) Verify that "Forgot email" link is present on page or not
+3) Verify that "Next Button" is present on page or not
+4) Verify the "Create Account" link is present on the page or not
+5) Verify that language (Englih) is present on the page or not
+6) Verify that  "Help, privacy, Terms" are present on the login page or not
+7) Verify that tab key is working on page or not
+8) Verify the Enter Key acts as submit details on the page or not.
+
+Test Case of Email or Phone Number :
+------------------------------------
+1) Verify that email or phone field is clickable
+2) Verify that placeholder should be present in email field
+3) Verify that user email should not start with any symbols.
+4) Verify the max length of the email field
+5) Verify that email field should accept alphanumarics values
+6) Verify that if next button is clicked without entering the email. Error should display
+
+Test Case for Password field :
+------------------------------
+1) Verify that pasword field is clickable
+2) Verify that placeholder should be present in password field
+3) Verify that maximum & minimum length accepted in the password field
+4) Verify that password enteried by user should be masked
+5) Verify that tha password field should accept the alphanumaric & symbols
+6) Verify that any spaces in the beginning or in ending of password should be trimmed
+7) Verify that error mesage is displayed when next button is pressed without password
+
+Test Case for forgot email :
+----------------------------
+1) Verify that when forgot email is clicked user should redirected to find your email page
+2) Verify that phone number or email field is present at find your email page.
+3) Verify that next button i preent on the page
+4) Verify that email field hould accdpt alphanumaric characters.
+5) Verify that when next button i clicked ithout entering the email , error message should display
+
+Test Case for forgot password :
+-------------------------------
+1) Verify hen uer click on forgot password link, user should be redirected to account recovery page
+2) Verify that user email address is displayed on the page.
+3) Verify that try another way is spresent on account Recovery page
+
+
+Negative Test cases:
+--------------------
+1) Verify the user with Invalid user & invalid password
+2) Verify the user with valid user & invalid password
+3) Verify the user with Invalid user & valid password
+4) Verify the user with blank user &  password
+5) Verify that account is locked or not after entering invalid password for many times.
+6) Verify that user should not be able to login by swapping email & password
+
+
+Test cases for ATM
+------------------------
+Test cases on Functionality of ATM
+Negative Test cases for ATM
+
+Test cases on Functionality of ATM :
+-----------------------------------
+1) Verify that when card should allow to insert in ATM
+2) Verify that when card is inserted in ATM, pin should be asked from user.
+3) Verify that when user enters incorrect pin for a perticular number of times, the card should block
+4) Verify that when user enters correct pin, the user details should be displayed on ATM screen.
+5) Verify the ATM machine asks the user for the amount to be withdrawl
+6) Verify that if the user enters the amount greater than the daily withdrawl limit, error mesage is displayed
+7) Verify the entered amount is round of digit 
+8) Verify that user enters valid amount, the exact amount of cash should be dispensed  from ATM machine.
+9) Verify the message afetr dispensing the amount from ATM.
+10) Verify that mesage is displayed when the cash in ATM is finished.
+11) Verify that how much of time is taken for tranaction
+12) Verify that user is able to use the card of other bank ATM's
+13) Verify that pin displayed in masked format
+14) Verify that error message is displayed when entered amount greter than the account balance
+15) Verify that user is not allowed to exceed the one-day transaction limit amount
+
+
+Negative Test cases for ATM :
+-----------------------------
+
+
+
+
+
+

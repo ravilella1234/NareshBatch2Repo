@@ -1,6 +1,6 @@
 package icici.loans.carloans;
 
-public class Icici implements Rbi
+public class Icici implements Rbi,Rbi1
 {
 
 	public static void main(String[] args) 

@@ -3,8 +3,10 @@ package icici.loans.goldloans;
 import java.util.Date;
 
 import icici.loans.carloans.A;
+import icici.loans.carloans.B;
+import icici.loans.carloans.Rbi;
 
-public   class C 
+public class C extends A 
 {
 	 int i= 10;
 	public final static String cname = "dell";
