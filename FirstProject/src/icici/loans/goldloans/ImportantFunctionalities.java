@@ -49,8 +49,5 @@ public class ImportantFunctionalities
 			Object ele = e.nextElement();
 			System.out.println(ele);
 		}
-		
-		
 	}
-
 }
