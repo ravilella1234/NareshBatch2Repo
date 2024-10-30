@@ -1,6 +1,7 @@
 package icici.loans.goldloans;
 
 import java.io.File;
+import java.util.Arrays;
 
 public class DemoOne {
 
@@ -15,12 +16,27 @@ public class DemoOne {
 		return this.getClass().getPackageName();
 	}
 	
-	public String projectName(String path)
+	public String[] projectName(String path)
 	{
 		File projectDir = new File(path);
-		return projectDir.getName();
-		
+		 String name1 = projectDir.getName();
+		 String name2 = projectDir.getParent();
+		 
+		 return new String[] {name1,name2};
 	}
+	
+	
+	public String getlastNameFromPackage() 
+	{
+		Package p = this.getClass().getPackage();
+		String n = p.getName();
+		String[] partName = n.split("\\.");
+		if(partName.length>3)
+			return partName[2];
+		else
+			return "String is not present at index ";
+	}
+	
 	
 	public static void main(String[] args) 
 	{
@@ -29,14 +45,17 @@ public class DemoOne {
 		System.out.println(System.getProperty("os.name"));
 		System.out.println(System.getProperty("os.version"));
 		
+		System.out.println((System.getProperty("user.dir")));
 		
 		DemoOne obj = new DemoOne();
 		System.out.println(obj.cName());
 		
 		System.out.println(obj.pName());
 		
-		System.out.println(obj.projectName(System.getProperty("user.dir")));
+		String[] val = obj.projectName(System.getProperty("user.dir"));
+		System.out.println(Arrays.toString(val));
 		
+		String val1 = obj.getlastNameFromPackage();
+		System.out.println(val1);
 	}
-
 }
