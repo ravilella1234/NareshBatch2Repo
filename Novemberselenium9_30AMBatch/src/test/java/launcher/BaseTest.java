@@ -22,7 +22,8 @@ public class BaseTest
 	
 	public static void navigateurl(String url)
 	{
-		driver.get(url);
+		//driver.get(url);
+		driver.navigate().to(url);
 	}
 
 }
