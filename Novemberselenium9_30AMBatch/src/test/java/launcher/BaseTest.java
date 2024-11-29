@@ -13,15 +13,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.WaitUtils;
+
 public class BaseTest 
 {
-	public static WebDriver driver;
-	public static FileInputStream fis;
-	public static String projectResourcePath = System.getProperty("user.dir")+"\\src\\test\\resources\\";
-	public static Properties p;
-	public static Properties mainProp;
-	public static Properties childProp;
-	public static Properties orProp;
+	protected static WebDriver driver;
+	private static FileInputStream fis;
+	private static String projectResourcePath = System.getProperty("user.dir")+"\\src\\test\\resources\\";
+	private static Properties p;
+	private static Properties mainProp;
+	private static Properties childProp;
+	private static Properties orProp;
+	private static WaitUtils waitUtils;
 	
 	public static void init() throws Exception
 	{
@@ -46,6 +49,13 @@ public class BaseTest
 		fis = new FileInputStream(projectResourcePath+"or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
+		
+		try {
+			waitUtils = new WaitUtils(driver, 10);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 	}
 	
 	public static void launch(String browser)
