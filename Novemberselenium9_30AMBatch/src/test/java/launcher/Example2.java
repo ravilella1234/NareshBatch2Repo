@@ -27,7 +27,6 @@ public class Example2
 			driver.findElement(By.cssSelector(pagelocator)).click();
 			
 			List<WebElement> names = driver.findElements(By.cssSelector("table#example>tbody>tr>td:first-child"));
-			
 			for(WebElement name:names)
 			{
 				System.out.println(name.getText());
