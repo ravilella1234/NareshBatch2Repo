@@ -28,15 +28,23 @@ public class Example3
 		//div[@jsname='erkvQe']//ul/li//descendant::div[@class='wM6W7d']/span
 		//div[@id='Alh6id']//ul/li/div//descendant::div[@class='wM6W7d']/span
 		
-		List<WebElement> listElements = driver.findElements(By.xpath("//div[@jsname='erkvQe']//ul/li//descendant::div[@class='wM6W7d']/span"));
+		List<WebElement> listElements = driver.findElements(By.xpath("//div[@id='Alh6id']//ul/li//descendant::div[@class='wM6W7d']/span"));
 		
 		System.out.println("Elements size : " + listElements.size());
 	
-		for(WebElement element:listElements)
+//		for(WebElement element:listElements)
+//		{
+//			System.out.println(element.getText());
+//			if(element.getText().contains("hadoop tutorial"))
+//				element.click();
+//			break;
+//		}
+		
+		
+		for(int i=0;i<listElements.size();i++)
 		{
-			System.out.println(element.getText());
-			if(element.getText().contains("hadoop tutorial"))
-				element.click();
+			if(listElements.get(i).getText().contains("hadoop tutorial"))
+				listElements.get(i).click();
 			break;
 		}
 	}

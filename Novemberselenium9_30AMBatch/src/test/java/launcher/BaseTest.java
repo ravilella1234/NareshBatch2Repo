@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 import utils.WaitUtils;
 
@@ -25,7 +29,50 @@ public class BaseTest
 	private static Properties childProp;
 	private static Properties orProp;
 	private static WaitUtils waitUtils;
+	private static ExtentReports report;
+	protected static ExtentTest test;
 	
+	
+	public static ExtentTest getTest() {
+		return test;
+	}
+
+	public static ExtentReports getReport() {
+		return report;
+	}
+
+	public static WebDriver getDriver() {
+		return driver;
+	}
+
+	public static FileInputStream getFis() {
+		return fis;
+	}
+
+	public static String getProjectResourcePath() {
+		return projectResourcePath;
+	}
+
+	public static Properties getP() {
+		return p;
+	}
+
+	public static Properties getMainProp() {
+		return mainProp;
+	}
+
+	public static Properties getChildProp() {
+		return childProp;
+	}
+
+	public static Properties getOrProp() {
+		return orProp;
+	}
+
+	public static WaitUtils getWaitUtils() {
+		return waitUtils;
+	}
+
 	public static void init() throws Exception
 	{
 		fis = new FileInputStream(projectResourcePath+"data.properties");
@@ -56,6 +103,12 @@ public class BaseTest
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		
+		fis = new FileInputStream(projectResourcePath+"log4jconfig.properties");
+		PropertyConfigurator.configure(fis);
+		
+		report = ExtentManager.getInstance();
+		
 	}
 	
 	public static void launch(String browser)

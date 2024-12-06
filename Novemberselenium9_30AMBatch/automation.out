@@ -1,0 +1,13 @@
+init the properties files....
+Opened the Browser : chrome
+Opened the application : https://www.amazon.in/
+select Dropdown Option By using locator : searchDropdownBox
+Entered the searc text By using locator : twotabsearchtextbox
+Clicked on Element By using locator ://*[@id="nav-search-submit-button"]
+init the properties files....
+Opened the Browser : chrome
+Opened the application : https://www.amazon.in/
+select Dropdown Option By using locator : searchDropdownBox
+Entered the searc text By using locator : twotabsearchtextbox
+Clicked on Element By using locator ://*[@id="nav-search-submit-button"]
+init the properties files....
