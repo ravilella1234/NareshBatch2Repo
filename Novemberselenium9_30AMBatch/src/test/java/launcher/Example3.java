@@ -44,8 +44,10 @@ public class Example3
 		for(int i=0;i<listElements.size();i++)
 		{
 			if(listElements.get(i).getText().contains("hadoop tutorial"))
+			{
 				listElements.get(i).click();
-			break;
+				break;
+			}	
 		}
 	}
 
