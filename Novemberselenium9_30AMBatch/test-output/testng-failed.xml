@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testNGPack.CheckBox1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="checkboxTest"/>
+        </methods>
+      </class> <!-- testNGPack.CheckBox1 -->
+      <class name="testNGPack.RadioButton1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="radioButtonTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testNGPack.RadioButton1 -->
+      <class name="testNGPack.LinksTesting1">
+        <methods>
+          <include name="linktesting1"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNGPack.LinksTesting1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

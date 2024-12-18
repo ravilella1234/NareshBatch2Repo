@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import launcher.BaseTest;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.lang.reflect.Method;
 
@@ -17,7 +18,8 @@ public class TNG_002 extends BaseTest
 	
 	
   @BeforeMethod
-  public void startUp() throws Exception 
+  @Parameters("browser")
+  public void startUp(String btype) throws Exception 
   {
 	  System.out.println("startUp has started...");
 	  	Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
@@ -26,7 +28,7 @@ public class TNG_002 extends BaseTest
 		test = getReport().createTest(this.getClass().getName());
 		test.log(Status.INFO, "init the properties files....");
 		
-		launch("chromebrowser");
+		launch(btype);
 		test.log(Status.INFO, "Opened the Browser : " +  getP().getProperty("chromebrowser"));
 		
 		navigateurl("amazonurl");
