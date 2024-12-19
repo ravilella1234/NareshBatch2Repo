@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import launcher.BaseTest;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.lang.reflect.Method;
@@ -16,10 +17,9 @@ import org.testng.annotations.AfterMethod;
 public class TNG_002 extends BaseTest
 {
 	
-	
   @BeforeMethod
   @Parameters("browser")
-  public void startUp(String btype) throws Exception 
+  public void startUp(@Optional("chrome") String btype) throws Exception 
   {
 	  System.out.println("startUp has started...");
 	  	Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
@@ -36,13 +36,14 @@ public class TNG_002 extends BaseTest
   }	
 	
   @Test
-  public void amazonAction(Method method) 
+  @Parameters("amazonsearchtext")
+  public void amazonAction(Method method, String searchtext) 
   {
 	  System.out.println(method.getName() +"  is Executing...");
 	    selectDropdownOption("amazonsearchdropbox_id","Books");
 		test.log(Status.PASS, "select Dropdown Option By using locator : " + getOrProp().getProperty("amazonsearchdropbox_id"));
 		
-		typeText("amazonsearchtextbox_id","Harry Potter");
+		typeText("amazonsearchtextbox_id",searchtext);
 		test.log(Status.FAIL, "Entered the search text By using locator : " + getOrProp().getProperty("amazonsearchtextbox_id"));
 		
 		clickElement("amazonsearchbutton_xpath");
