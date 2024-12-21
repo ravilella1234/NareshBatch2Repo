@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGPack.TNG_002">
+      <class name="testNGPack.TestNGTestDependencies">
         <methods>
-          <include name="amazonAction"/>
-          <include name="startUp"/>
-          <include name="packUp"/>
+          <include name="orange"/>
+          <include name="white"/>
+          <include name="blue" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNGPack.TNG_002 -->
+      </class> <!-- testNGPack.TestNGTestDependencies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

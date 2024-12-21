@@ -12,6 +12,7 @@ import org.testng.annotations.Parameters;
 
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 
 public class TNG_002 extends BaseTest
@@ -35,7 +36,7 @@ public class TNG_002 extends BaseTest
 		test.log(Status.INFO, "Opened the application : " + getChildProp().getProperty("amazonurl"));
   }	
 	
-  @Test
+  @Test() //invocationCount = 2,threadPoolSize =4,invocationTimeOut = 10000
   @Parameters("amazonsearchtext")
   public void amazonAction(Method method, String searchtext) 
   {
@@ -43,6 +44,7 @@ public class TNG_002 extends BaseTest
 	    selectDropdownOption("amazonsearchdropbox_id","Books");
 		test.log(Status.PASS, "select Dropdown Option By using locator : " + getOrProp().getProperty("amazonsearchdropbox_id"));
 		
+		driver.findElement(By.id("twotabsearchtextbox")).clear();
 		typeText("amazonsearchtextbox_id",searchtext);
 		test.log(Status.FAIL, "Entered the search text By using locator : " + getOrProp().getProperty("amazonsearchtextbox_id"));
 		
