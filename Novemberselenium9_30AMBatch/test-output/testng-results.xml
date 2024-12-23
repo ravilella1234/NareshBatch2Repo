@@ -1,45 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T10:53:25 IST" name="Default suite" finished-at="2024-12-21T10:53:25 IST" duration-ms="113">
+  <suite started-at="2024-12-23T10:45:01 IST" name="Suite" finished-at="2024-12-23T10:45:01 IST" duration-ms="640">
     <groups>
+      <group name="All">
+        <method signature="RegisterTest.registerWithAllFields(java.lang.reflect.Method)[pri:2, instance:tests.RegisterTest@543588e6]" name="registerWithAllFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method)[pri:3, instance:tests.RegisterTest@543588e6]" name="registerWithDuplicateFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithEmptyFields(java.lang.reflect.Method)[pri:4, instance:tests.RegisterTest@543588e6]" name="registerWithEmptyFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" name="registerWithMandotoryFields" class="tests.RegisterTest"/>
+        <method signature="LoginTest.loginWithEmptyFields(java.lang.reflect.Method)[pri:5, instance:tests.LoginTest@4686afc2]" name="loginWithEmptyFields" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method)[pri:4, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidCredientials" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidPassword(java.lang.reflect.Method)[pri:3, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidPassword" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidUser(java.lang.reflect.Method)[pri:2, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidUser" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" name="loginWithValidCredientials" class="tests.LoginTest"/>
+        <method signature="SearchTest.searchWithEmptyProduct(java.lang.reflect.Method)[pri:3, instance:tests.SearchTest@6340e5f0]" name="searchWithEmptyProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithInvalidProduct(java.lang.reflect.Method)[pri:2, instance:tests.SearchTest@6340e5f0]" name="searchWithInvalidProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" name="searchWithValidProduct" class="tests.SearchTest"/>
+      </group> <!-- All -->
+      <group name="Register">
+        <method signature="RegisterTest.registerWithAllFields(java.lang.reflect.Method)[pri:2, instance:tests.RegisterTest@543588e6]" name="registerWithAllFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method)[pri:3, instance:tests.RegisterTest@543588e6]" name="registerWithDuplicateFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithEmptyFields(java.lang.reflect.Method)[pri:4, instance:tests.RegisterTest@543588e6]" name="registerWithEmptyFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" name="registerWithMandotoryFields" class="tests.RegisterTest"/>
+      </group> <!-- Register -->
+      <group name="Search">
+        <method signature="SearchTest.searchWithEmptyProduct(java.lang.reflect.Method)[pri:3, instance:tests.SearchTest@6340e5f0]" name="searchWithEmptyProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithInvalidProduct(java.lang.reflect.Method)[pri:2, instance:tests.SearchTest@6340e5f0]" name="searchWithInvalidProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" name="searchWithValidProduct" class="tests.SearchTest"/>
+      </group> <!-- Search -->
+      <group name="Regression">
+        <method signature="RegisterTest.registerWithAllFields(java.lang.reflect.Method)[pri:2, instance:tests.RegisterTest@543588e6]" name="registerWithAllFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method)[pri:3, instance:tests.RegisterTest@543588e6]" name="registerWithDuplicateFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithEmptyFields(java.lang.reflect.Method)[pri:4, instance:tests.RegisterTest@543588e6]" name="registerWithEmptyFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" name="registerWithMandotoryFields" class="tests.RegisterTest"/>
+        <method signature="LoginTest.loginWithEmptyFields(java.lang.reflect.Method)[pri:5, instance:tests.LoginTest@4686afc2]" name="loginWithEmptyFields" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method)[pri:4, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidCredientials" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidPassword(java.lang.reflect.Method)[pri:3, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidPassword" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidUser(java.lang.reflect.Method)[pri:2, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidUser" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" name="loginWithValidCredientials" class="tests.LoginTest"/>
+        <method signature="SearchTest.searchWithEmptyProduct(java.lang.reflect.Method)[pri:3, instance:tests.SearchTest@6340e5f0]" name="searchWithEmptyProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithInvalidProduct(java.lang.reflect.Method)[pri:2, instance:tests.SearchTest@6340e5f0]" name="searchWithInvalidProduct" class="tests.SearchTest"/>
+        <method signature="SearchTest.searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" name="searchWithValidProduct" class="tests.SearchTest"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="RegisterTest.registerWithAllFields(java.lang.reflect.Method)[pri:2, instance:tests.RegisterTest@543588e6]" name="registerWithAllFields" class="tests.RegisterTest"/>
+        <method signature="RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" name="registerWithMandotoryFields" class="tests.RegisterTest"/>
+        <method signature="LoginTest.loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" name="loginWithValidCredientials" class="tests.LoginTest"/>
+        <method signature="SearchTest.searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" name="searchWithValidProduct" class="tests.SearchTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" name="registerWithMandotoryFields" class="tests.RegisterTest"/>
+        <method signature="LoginTest.loginWithInvalidUser(java.lang.reflect.Method)[pri:2, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidUser" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" name="loginWithValidCredientials" class="tests.LoginTest"/>
+        <method signature="SearchTest.searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" name="searchWithValidProduct" class="tests.SearchTest"/>
+      </group> <!-- sanity -->
+      <group name="Login">
+        <method signature="LoginTest.loginWithEmptyFields(java.lang.reflect.Method)[pri:5, instance:tests.LoginTest@4686afc2]" name="loginWithEmptyFields" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method)[pri:4, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidCredientials" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidPassword(java.lang.reflect.Method)[pri:3, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidPassword" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithInvalidUser(java.lang.reflect.Method)[pri:2, instance:tests.LoginTest@4686afc2]" name="loginWithInvalidUser" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" name="loginWithValidCredientials" class="tests.LoginTest"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2024-12-21T10:53:25 IST" name="Default test" finished-at="2024-12-21T10:53:25 IST" duration-ms="113">
-      <class name="testNGPack.TestNGDataDependencyBetweenTests">
-        <test-method signature="test1(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:testNGPack.TestNGDataDependencyBetweenTests@5acf93bb]" started-at="2024-12-21T10:53:25 IST" name="test1" finished-at="2024-12-21T10:53:25 IST" duration-ms="17" status="PASS">
+    <test started-at="2024-12-23T10:45:01 IST" name="RegisterTest" finished-at="2024-12-23T10:45:01 IST" duration-ms="193">
+      <class name="tests.RegisterTest">
+        <test-method signature="registerWithMandotoryFields(java.lang.reflect.Method)[pri:1, instance:tests.RegisterTest@543588e6]" started-at="2024-12-23T10:45:01 IST" name="registerWithMandotoryFields" finished-at="2024-12-23T10:45:01 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testNGPack.TestNGDataDependencyBetweenTests.test1(java.lang.reflect.Method,org.testng.ITestContext)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@1040be71]]>
+                <![CDATA[public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:testNGPack.TestNGDataDependencyBetweenTests@5acf93bb]" started-at="2024-12-21T10:53:25 IST" name="test2" finished-at="2024-12-21T10:53:25 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- registerWithMandotoryFields -->
+        <test-method signature="registerWithAllFields(java.lang.reflect.Method)[pri:2, instance:tests.RegisterTest@543588e6]" started-at="2024-12-23T10:45:01 IST" name="registerWithAllFields" finished-at="2024-12-23T10:45:01 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testNGPack.TestNGDataDependencyBetweenTests.test2(java.lang.reflect.Method,org.testng.ITestContext)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@1040be71]]>
+                <![CDATA[public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- testNGPack.TestNGDataDependencyBetweenTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- registerWithAllFields -->
+        <test-method signature="registerWithDuplicateFields(java.lang.reflect.Method)[pri:3, instance:tests.RegisterTest@543588e6]" started-at="2024-12-23T10:45:01 IST" name="registerWithDuplicateFields" finished-at="2024-12-23T10:45:01 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithDuplicateFields -->
+        <test-method signature="registerWithEmptyFields(java.lang.reflect.Method)[pri:4, instance:tests.RegisterTest@543588e6]" started-at="2024-12-23T10:45:01 IST" name="registerWithEmptyFields" finished-at="2024-12-23T10:45:01 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithEmptyFields -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- RegisterTest -->
+    <test started-at="2024-12-23T10:45:01 IST" name="LoginTest" finished-at="2024-12-23T10:45:01 IST" duration-ms="61">
+      <class name="tests.LoginTest">
+        <test-method signature="loginWithValidCredientials(java.lang.reflect.Method)[pri:1, instance:tests.LoginTest@4686afc2]" started-at="2024-12-23T10:45:01 IST" name="loginWithValidCredientials" finished-at="2024-12-23T10:45:01 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredientials -->
+        <test-method signature="loginWithInvalidUser(java.lang.reflect.Method)[pri:2, instance:tests.LoginTest@4686afc2]" started-at="2024-12-23T10:45:01 IST" name="loginWithInvalidUser" finished-at="2024-12-23T10:45:01 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUser -->
+        <test-method signature="loginWithInvalidPassword(java.lang.reflect.Method)[pri:3, instance:tests.LoginTest@4686afc2]" started-at="2024-12-23T10:45:01 IST" name="loginWithInvalidPassword" finished-at="2024-12-23T10:45:01 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method signature="loginWithInvalidCredientials(java.lang.reflect.Method)[pri:4, instance:tests.LoginTest@4686afc2]" started-at="2024-12-23T10:45:01 IST" name="loginWithInvalidCredientials" finished-at="2024-12-23T10:45:01 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredientials -->
+        <test-method signature="loginWithEmptyFields(java.lang.reflect.Method)[pri:5, instance:tests.LoginTest@4686afc2]" started-at="2024-12-23T10:45:01 IST" name="loginWithEmptyFields" finished-at="2024-12-23T10:45:01 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyFields -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-12-23T10:45:01 IST" name="SearchTest" finished-at="2024-12-23T10:45:01 IST" duration-ms="58">
+      <class name="tests.SearchTest">
+        <test-method signature="searchWithValidProduct(java.lang.reflect.Method)[pri:1, instance:tests.SearchTest@6340e5f0]" started-at="2024-12-23T10:45:01 IST" name="searchWithValidProduct" finished-at="2024-12-23T10:45:01 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithValidProduct -->
+        <test-method signature="searchWithInvalidProduct(java.lang.reflect.Method)[pri:2, instance:tests.SearchTest@6340e5f0]" started-at="2024-12-23T10:45:01 IST" name="searchWithInvalidProduct" finished-at="2024-12-23T10:45:01 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithInvalidProduct -->
+        <test-method signature="searchWithEmptyProduct(java.lang.reflect.Method)[pri:3, instance:tests.SearchTest@6340e5f0]" started-at="2024-12-23T10:45:01 IST" name="searchWithEmptyProduct" finished-at="2024-12-23T10:45:01 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithEmptyProduct -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- SearchTest -->
+  </suite> <!-- Suite -->
 </testng-results>
