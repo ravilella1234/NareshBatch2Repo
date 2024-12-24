@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,17 +51,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Naresh Batch-2\Novemberselenium9_30AMBatch\testnggrouping.xml</span>
+                    <span>D:\Naresh Batch-2\Novemberselenium9_30AMBatch\testnggroupdependency.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>7 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest1" class="method navigator-link" hash-for-method="registerWithAllFields(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method))">registerWithAllFields(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest1" class="method navigator-link" hash-for-method="registerWithEmptyFields">registerWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,62 +132,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithEmptyFields(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method))">loginWithEmptyFields(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest1" class="method navigator-link" hash-for-method="registerWithDuplicateFields(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method))">registerWithDuplicateFields(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidCredientials(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method))">loginWithInvalidCredientials(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidPassword(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method))">loginWithInvalidPassword(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUser(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method))">loginWithInvalidUser(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredientials(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method))">loginWithValidCredientials(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="registerWithAllFields(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method))">registerWithAllFields(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="registerWithDuplicateFields(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method))">registerWithDuplicateFields(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="registerWithEmptyFields(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method))">registerWithEmptyFields(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="registerWithMandotoryFields(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method))">registerWithMandotoryFields(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="searchWithEmptyProduct(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method))">searchWithEmptyProduct(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="searchWithInvalidProduct(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method))">searchWithInvalidProduct(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SearchTest" class="method navigator-link" hash-for-method="searchWithValidProduct(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method))">searchWithValidProduct(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTest1" class="method navigator-link" hash-for-method="registerWithMandotoryFields(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method))">registerWithMandotoryFields(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method))</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -174,122 +152,66 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.SearchTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegisterTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchWithEmptyProduct(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method))">
-                  </a> <!-- searchWithEmptyProduct(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method)) -->
-                  <span class="method-name">searchWithEmptyProduct</span>
-                  <span class="parameters">(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchWithInvalidProduct(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method))">
-                  </a> <!-- searchWithInvalidProduct(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method)) -->
-                  <span class="method-name">searchWithInvalidProduct</span>
-                  <span class="parameters">(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchWithValidProduct(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method))">
-                  </a> <!-- searchWithValidProduct(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method)) -->
-                  <span class="method-name">searchWithValidProduct</span>
-                  <span class="parameters">(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.RegisterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerWithAllFields(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method))">
-                  </a> <!-- registerWithAllFields(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method)) -->
+                  <a name="registerWithAllFields(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method))">
+                  </a> <!-- registerWithAllFields(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method)) -->
                   <span class="method-name">registerWithAllFields</span>
-                  <span class="parameters">(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerWithDuplicateFields(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method))">
-                  </a> <!-- registerWithDuplicateFields(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method)) -->
-                  <span class="method-name">registerWithDuplicateFields</span>
-                  <span class="parameters">(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerWithEmptyFields(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method))">
-                  </a> <!-- registerWithEmptyFields(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method)) -->
-                  <span class="method-name">registerWithEmptyFields</span>
-                  <span class="parameters">(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerWithMandotoryFields(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method))">
-                  </a> <!-- registerWithMandotoryFields(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method)) -->
-                  <span class="method-name">registerWithMandotoryFields</span>
-                  <span class="parameters">(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method))</span>
+                  <span class="parameters">(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">java.lang.ArithmeticException: / by zero
+	at tests.RegisterTest1.registerWithAllFields(RegisterTest1.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">tests.RegisterTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithEmptyFields(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method))">
-                  </a> <!-- loginWithEmptyFields(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method)) -->
-                  <span class="method-name">loginWithEmptyFields</span>
-                  <span class="parameters">(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method))</span>
+                  <a name="registerWithEmptyFields">
+                  </a> <!-- registerWithEmptyFields -->
+                  <span class="method-name">registerWithEmptyFields</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RegisterTest1.registerWithEmptyFields(java.lang.reflect.Method)[pri:0, instance:tests.RegisterTest1@1e04fa0a] depends on not successfully finished methods in group &quot;sanity&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegisterTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithDuplicateFields(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method))">
+                  </a> <!-- registerWithDuplicateFields(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method)) -->
+                  <span class="method-name">registerWithDuplicateFields</span>
+                  <span class="parameters">(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithInvalidCredientials(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method))">
-                  </a> <!-- loginWithInvalidCredientials(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method)) -->
-                  <span class="method-name">loginWithInvalidCredientials</span>
-                  <span class="parameters">(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInvalidPassword(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method))">
-                  </a> <!-- loginWithInvalidPassword(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method)) -->
-                  <span class="method-name">loginWithInvalidPassword</span>
-                  <span class="parameters">(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInvalidUser(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method))">
-                  </a> <!-- loginWithInvalidUser(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method)) -->
-                  <span class="method-name">loginWithInvalidUser</span>
-                  <span class="parameters">(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method))</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredientials(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method))">
-                  </a> <!-- loginWithValidCredientials(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method)) -->
-                  <span class="method-name">loginWithValidCredientials</span>
-                  <span class="parameters">(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method))</span>
+                  <a name="registerWithMandotoryFields(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method))">
+                  </a> <!-- registerWithMandotoryFields(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method)) -->
+                  <span class="method-name">registerWithMandotoryFields</span>
+                  <span class="parameters">(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -297,38 +219,24 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Naresh Batch-2\Novemberselenium9_30AMBatch\testnggrouping.xml</span>
+            <span class="header-content">D:\Naresh Batch-2\Novemberselenium9_30AMBatch\testnggroupdependency.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;All&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;All&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;RegisterTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;dependencies&gt;
+        &lt;group depends-on=&quot;sanity&quot; name=&quot;Regression&quot;/&gt;
+        &lt;group depends-on=&quot;smoke&quot; name=&quot;sanity&quot;/&gt;
+      &lt;/dependencies&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;tests.RegisterTest1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- RegisterTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SearchTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.SearchTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SearchTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -340,13 +248,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RegisterTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">LoginTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">SearchTest (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -357,166 +259,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">All</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidPassword</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidUser</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithValidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithAllFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithDuplicateFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithMandotoryFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithEmptyProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithInvalidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithValidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Login</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidPassword</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidUser</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithValidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Register</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithAllFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithDuplicateFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithMandotoryFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidPassword</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidUser</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithValidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithAllFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithDuplicateFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">registerWithEmptyFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithMandotoryFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithEmptyProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithInvalidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithValidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Search</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithEmptyProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithInvalidProduct</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithValidProduct</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -524,19 +270,7 @@
               <span class="test-group-name">sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginWithInvalidUser</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginWithValidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithMandotoryFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithValidProduct</span>
+                <span class="method-in-group-name">registerWithAllFields</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -544,19 +278,11 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginWithValidCredientials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">registerWithAllFields</span>
+                <span class="method-in-group-name">registerWithDuplicateFields</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">registerWithMandotoryFields</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchWithValidProduct</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -576,60 +302,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registerWithMandotoryFields')
-data.setCell(0, 2, 'tests.RegisterTest')
-data.setCell(0, 3, 18);
+data.setCell(0, 1, 'registerWithDuplicateFields')
+data.setCell(0, 2, 'tests.RegisterTest1')
+data.setCell(0, 3, 30);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerWithDuplicateFields')
-data.setCell(1, 2, 'tests.RegisterTest')
-data.setCell(1, 3, 14);
+data.setCell(1, 1, 'registerWithAllFields')
+data.setCell(1, 2, 'tests.RegisterTest1')
+data.setCell(1, 3, 3);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchWithEmptyProduct')
-data.setCell(2, 2, 'tests.SearchTest')
-data.setCell(2, 3, 12);
+data.setCell(2, 1, 'registerWithMandotoryFields')
+data.setCell(2, 2, 'tests.RegisterTest1')
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginWithInvalidPassword')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 8);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'registerWithAllFields')
-data.setCell(4, 2, 'tests.RegisterTest')
-data.setCell(4, 3, 6);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'registerWithEmptyFields')
-data.setCell(5, 2, 'tests.RegisterTest')
-data.setCell(5, 3, 6);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithInvalidUser')
-data.setCell(6, 2, 'tests.LoginTest')
-data.setCell(6, 3, 6);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithInvalidCredientials')
-data.setCell(7, 2, 'tests.LoginTest')
-data.setCell(7, 3, 5);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchWithInvalidProduct')
-data.setCell(8, 2, 'tests.SearchTest')
-data.setCell(8, 3, 5);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginWithEmptyFields')
-data.setCell(9, 2, 'tests.LoginTest')
-data.setCell(9, 3, 4);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'loginWithValidCredientials')
-data.setCell(10, 2, 'tests.LoginTest')
-data.setCell(10, 3, 3);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'searchWithValidProduct')
-data.setCell(11, 2, 'tests.SearchTest')
-data.setCell(11, 3, 3);
+data.setCell(3, 1, 'registerWithEmptyFields')
+data.setCell(3, 2, 'tests.RegisterTest1')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 90 ms</span>
+              <span class="suite-total-time">Total running time: 35 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -655,60 +349,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.RegisterTest1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">registerWithMandotoryFields(public void tests.RegisterTest.registerWithMandotoryFields(java.lang.reflect.Method))</span>
+                <span class="method-name">registerWithDuplicateFields(public void tests.RegisterTest1.registerWithDuplicateFields(java.lang.reflect.Method))</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerWithAllFields(public void tests.RegisterTest.registerWithAllFields(java.lang.reflect.Method))</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-name">registerWithMandotoryFields(public void tests.RegisterTest1.registerWithMandotoryFields(java.lang.reflect.Method))</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerWithDuplicateFields(public void tests.RegisterTest.registerWithDuplicateFields(java.lang.reflect.Method))</span>
-                <span class="method-start">62 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registerWithAllFields(public void tests.RegisterTest1.registerWithAllFields(java.lang.reflect.Method))</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerWithEmptyFields(public void tests.RegisterTest.registerWithEmptyFields(java.lang.reflect.Method))</span>
-                <span class="method-start">90 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredientials(public void tests.LoginTest.loginWithValidCredientials(java.lang.reflect.Method))</span>
-                <span class="method-start">411 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithInvalidUser(public void tests.LoginTest.loginWithInvalidUser(java.lang.reflect.Method))</span>
-                <span class="method-start">420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithInvalidPassword(public void tests.LoginTest.loginWithInvalidPassword(java.lang.reflect.Method))</span>
-                <span class="method-start">436 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithInvalidCredientials(public void tests.LoginTest.loginWithInvalidCredientials(java.lang.reflect.Method))</span>
-                <span class="method-start">452 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithEmptyFields(public void tests.LoginTest.loginWithEmptyFields(java.lang.reflect.Method))</span>
-                <span class="method-start">463 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.SearchTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">searchWithValidProduct(public void tests.SearchTest.searchWithValidProduct(java.lang.reflect.Method))</span>
-                <span class="method-start">497 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchWithInvalidProduct(public void tests.SearchTest.searchWithInvalidProduct(java.lang.reflect.Method))</span>
-                <span class="method-start">509 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchWithEmptyProduct(public void tests.SearchTest.searchWithEmptyProduct(java.lang.reflect.Method))</span>
-                <span class="method-start">531 ms</span>
+                <span class="method-name">registerWithEmptyFields</span>
+                <span class="method-start">74 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,7 +8,7 @@ public class RegisterTest
 {
 	String cName = this.getClass().getSimpleName();
 	
-  @Test(priority = 1,groups = {"smoke","sanity","Regression","Register","All"})
+  @Test(priority = 1,groups = {"smoke","Regression","Register","All"})
   public void registerWithMandotoryFields(Method method) 
   {
 	  System.out.println(cName+ " - " + method.getName() + " - " + Thread.currentThread().getId());
@@ -20,7 +20,7 @@ public class RegisterTest
 	  System.out.println(cName+ " - " + method.getName() + " - " + Thread.currentThread().getId());
   }
   
-  @Test(priority = 3,groups = {"Regression","Register","All"})
+  @Test(priority = 3,groups = {"Regression","sanity","Register","All"})
   public void registerWithDuplicateFields(Method method) 
   {
 	  System.out.println(cName+ " - " + method.getName() + " - " + Thread.currentThread().getId());

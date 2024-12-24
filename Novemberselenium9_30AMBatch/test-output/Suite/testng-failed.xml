@@ -2,16 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="amazonsearchtext" value="Harry Potter"/>
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testNGPack.TNG_002">
+      <class name="tests.RegisterTest1">
         <methods>
-          <include name="amazonAction" invocation-numbers="0"/>
-          <include name="startUp"/>
-          <include name="packUp"/>
+          <include name="registerWithDuplicateFields"/>
+          <include name="registerWithMandotoryFields"/>
+          <include name="registerWithEmptyFields"/>
+          <include name="registerWithAllFields" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNGPack.TNG_002 -->
+      </class> <!-- tests.RegisterTest1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
