@@ -2,8 +2,10 @@ package tests;
 
 import java.lang.reflect.Method;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(listenerspack.MyListenerClass.class)
 public class LoginTest 
 {
 	
