@@ -1,10 +1,13 @@
 package listenerspack;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class MyListenerClass implements ITestListener
+import launcher.BaseTest;
+
+public class MyListenerClass extends BaseTest  implements ITestListener
 {
 
 	@Override
@@ -21,6 +24,16 @@ public class MyListenerClass implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println(result.getMethod().getMethodName() + " - has Failed ");
+		
+		//WebDriver driver;
+		/*try {
+			driver = (WebDriver)(result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance()));
+		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		
+		
 	}
 
 	@Override

@@ -3,14 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listenerspack.MyListenerClass"/>
+    <listener class-name="listenerspack.RetryListener"/>
   </listeners>
   <test thread-count="5" name="RegisterTest(failed)">
     <classes>
       <class name="tests.RegisterTest">
         <methods>
           <include name="registerWithEmptyFields"/>
-          <include name="registerWithAllFields" invocation-numbers="0"/>
-          <include name="registerWithDuplicateFields" invocation-numbers="0"/>
+          <include name="registerWithAllFields" invocation-numbers="0 0 0 0"/>
+          <include name="registerWithDuplicateFields" invocation-numbers="0 0 0 0"/>
         </methods>
       </class> <!-- tests.RegisterTest -->
     </classes>
