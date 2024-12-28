@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="linktestingTest(failed)">
+    <parameter name="os" value="WINDOWS"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://google.com"/>
+    <classes>
+      <class name="tests.LinksTesting1">
+        <methods>
+          <include name="startup"/>
+          <include name="endup"/>
+          <include name="linktesting1"/>
+        </methods>
+      </class> <!-- tests.LinksTesting1 -->
+    </classes>
+  </test> <!-- linktestingTest(failed) -->
+  <test thread-count="5" parallel="tests" name="CheckBoxTest(failed)">
+    <parameter name="os" value="WINDOWS"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://echoecho.com/htmlforms09.htm"/>
+    <classes>
+      <class name="tests.CheckBox1">
+        <methods>
+          <include name="startup"/>
+          <include name="endup"/>
+          <include name="checkboxTest"/>
+        </methods>
+      </class> <!-- tests.CheckBox1 -->
+    </classes>
+  </test> <!-- CheckBoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
