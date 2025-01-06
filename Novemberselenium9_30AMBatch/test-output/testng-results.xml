@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-04T09:39:24 IST" name="Default suite" finished-at="2025-01-04T09:39:25 IST" duration-ms="1859">
+  <suite started-at="2025-01-06T10:53:04 IST" name="Default suite" finished-at="2025-01-06T10:53:13 IST" duration-ms="9889">
     <groups>
     </groups>
-    <test started-at="2025-01-04T09:39:24 IST" name="Default test" finished-at="2025-01-04T09:39:25 IST" duration-ms="1859">
-      <class name="excelOperations.FinalversionTest">
-        <test-method signature="f(java.util.Hashtable)[pri:0, instance:excelOperations.FinalversionTest@1de76cc7]" started-at="2025-01-04T09:39:25 IST" name="f" data-provider="dp" finished-at="2025-01-04T09:39:25 IST" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=ravi2021, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-01-06T10:53:04 IST" name="Default test" finished-at="2025-01-06T10:53:13 IST" duration-ms="9889">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="startup()[pri:0, instance:test.LoginTest@37d4349f]" started-at="2025-01-06T10:53:04 IST" name="startup" finished-at="2025-01-06T10:53:12 IST" duration-ms="8691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="f()[pri:0, instance:test.LoginTest@37d4349f]" started-at="2025-01-06T10:53:12 IST" name="f" finished-at="2025-01-06T10:53:13 IST" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method signature="f(java.util.Hashtable)[pri:0, instance:excelOperations.FinalversionTest@1de76cc7]" started-at="2025-01-04T09:39:25 IST" name="f" data-provider="dp" finished-at="2025-01-04T09:39:25 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=N, UserPassword=password2, UserName=user2, Browser=firefox}]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="endup()[pri:0, instance:test.LoginTest@37d4349f]" started-at="2025-01-06T10:53:13 IST" name="endup" finished-at="2025-01-06T10:53:13 IST" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- excelOperations.FinalversionTest -->
+        </test-method> <!-- endup -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
