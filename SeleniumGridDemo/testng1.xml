@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
+<suite name="Suite" >
 
   <test  name="CheckBoxTest">
   	<parameter name="os" value="WINDOWS"></parameter>
@@ -14,7 +14,7 @@
   
   <test  name="linktestingTest">
   	<parameter name="os" value="WINDOWS"></parameter>
-  	<parameter name="browser" value="edge"></parameter>
+  	<parameter name="browser" value="firefox"></parameter>
   	<parameter name="url" value="https://google.com"></parameter>
     <classes>
       <class name="tests.LinksTesting1"/>

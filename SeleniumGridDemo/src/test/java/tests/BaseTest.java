@@ -34,6 +34,7 @@ public class BaseTest
 			//remote
 			if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
 			{
+				System.out.println("remote code is executed...");
 				DesiredCapabilities capabilities = new DesiredCapabilities();
 				
 				//os
@@ -58,21 +59,24 @@ public class BaseTest
 					case "chrome": capabilities.setBrowserName("chrome"); break;
 					case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
 					case "firefox": capabilities.setBrowserName("firefox"); break;
-					default :System.out.println("Invalid browser name.."); return;
+					default :System.out.println("Invalid browser name.."); 
+					return;
 				}
 				
-				driver = new RemoteWebDriver(new URL("http://192.168.29.100:4444/wd/hub"), capabilities);
+				driver = new RemoteWebDriver(new URL("http://192.168.0.187:4444/wd/hub"), capabilities);
 			}
 			
 			//local
 			if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 			{
+				System.out.println("local code is executed...");
 				switch(br.toLowerCase())
 				{
 					case "chrome": driver = new ChromeDriver(); break;
 					case "edge" : driver = new EdgeDriver(); break;
 					case "firefox": driver = new FirefoxDriver(); break;
-					default :System.out.println("Invalid browser name.."); return;
+					default :System.out.println("Invalid browser name.."); 
+					return;
 				}
 			}
 		
