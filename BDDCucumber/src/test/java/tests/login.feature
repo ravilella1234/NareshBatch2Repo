@@ -5,11 +5,17 @@ Background:
 	Given The user navigates to the login page
   
   
-  Scenario: Successful login with valid credentials
-    When The user enters valid email credentials "ravilella@gmail.com"
-    And Enter valid password "123456"
+  Scenario Outline: Successful login with valid credentials
+    When The user enters valid email credentials "<username>"
+    And Enter valid password "<password>"
     And Clicks the login button
     Then The user should be redirected to the dashboard
+    Examples:
+    |username	|password|
+    |user1		|	pass123|
+    |user2		|	pass456|
+    |user3		|	pass789|
+		
     
   Scenario: Login attempt with invalid credentials    
     When The user enters invalid email "ravilella@gmail.com"
