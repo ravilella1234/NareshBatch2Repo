@@ -11,9 +11,9 @@ import io.cucumber.junit.CucumberOptions;
 				 plugin = {"pretty","html:target/cucumberhtmlreport.html",
 						   "json:target/cucumberjsonreport.json",
 						   "junit:target/cucumberjunitreport.xml"
-		 				  },
-				 dryRun = true,
-				 tags = "@smoketest,@valid-invalid-credentials"
+		 				  }
+				 //dryRun = true,
+				 //tags = "@smoketest,@valid-invalid-credentials"
 			    )
 public class TestRunner 
 {

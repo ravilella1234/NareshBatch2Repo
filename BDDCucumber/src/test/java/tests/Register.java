@@ -1,10 +1,40 @@
 package tests;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
 
 public class Register 
 {
 
+	@Before(value = "@registration", order=1)
+	public void setup1(Scenario scenario)
+	{
+		System.out.println("setup1 - Browser get Opened...");
+		System.out.println("Starting scenario: " + scenario.getName());
+	}
+	
+	
+	@Before(value = "@registration", order=2)
+	public void setup2()
+	{
+		System.out.println("setup2 - Browser get Opened...");
+	}
+	
+	@After(value = "@registration",order=1)
+	public void killProcess1(Scenario scenario)
+	{
+		System.out.println("killProcess1 - Browser get Closed...");
+		System.out.println("Finished scenario: " + scenario.getName());
+	}
+	
+	@After(value = "@registration",order =2)
+	public void killProcess2()
+	{
+		System.out.println("killProcess2 - Browser get Closed...");
+	}
+	
 	@Given("User navigates to Register Account page")
 	public void user_navigates_to_Register_Account_page()
 	{

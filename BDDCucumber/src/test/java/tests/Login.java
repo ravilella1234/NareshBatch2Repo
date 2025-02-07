@@ -1,9 +1,22 @@
 package tests;
 
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.*;
 
 public class Login 
 {
+	@BeforeStep(value = "@registration")
+	public void beforestep()
+	{
+		System.out.println("Execute before every step");
+	}
+	
+	@AfterStep(value = "@registration")
+	public void afterstep()
+	{
+		System.out.println("Execute after every step");
+	}
 	
 	@Given("The user navigates to the login page")
 	public void the_user_navigates_to_the_login_page() {
