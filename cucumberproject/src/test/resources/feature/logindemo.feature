@@ -5,7 +5,7 @@ Scenario: User successfully logs in with valid credentials
 	When the user enters "student" into the username field
 	And the user enters "Password123" into the password field
 	And the user clicks the Submit button
-	Then the new page URL should contain "practicetestautomation.com/logged-in-successfully/"
+	Then the new page URL should contain "https://practicetestautomation.com/logged-in-successfully/"
 	And the new page should display text containing "Congratulations student. You successfully logged in!" 
 	And the "Log out" button should be visible on the new page
 

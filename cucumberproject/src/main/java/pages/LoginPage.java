@@ -13,7 +13,7 @@ public class LoginPage
 	private By loginButtonField = By.id("submit");
 	private By loginSuccessField = By.xpath("//strong[contains(text(),'Congratulations student. You successfully logged in!')]");
 	private By logoutButtonField = By.xpath("//a[normalize-space()='Log out']");
-	private By loginErrorField = By.id("error");
+	private By loginErrorField = By.cssSelector("#error");
     //private By loginwronguserField = ;
 	//private By loginwrongpasswordField = ;
 	/**
@@ -39,12 +39,17 @@ public class LoginPage
 		driver.findElement(loginButtonField).click();
 	}
 	
-	public boolean loginSuccess()
+	public String loginSuccess()
 	{
-		return driver.findElement(loginSuccessField).isDisplayed();
+		return driver.findElement(loginSuccessField).getText();
 	}
 	
-	public String loginErrorText()
+	public boolean loginErrorDispled() 
+	{
+		return driver.findElement(loginErrorField).isDisplayed();
+	}
+	
+	public String loginErrorText() 
 	{
 		return driver.findElement(loginErrorField).getText();
 	}

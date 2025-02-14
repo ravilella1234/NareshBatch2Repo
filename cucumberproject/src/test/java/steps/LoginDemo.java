@@ -54,13 +54,13 @@ public class LoginDemo
 	}
 
 	@Then("an error message should be displayed")
-	public void an_error_message_should_be_displayed() 
+	public void an_error_message_should_be_displayed() throws Exception 
 	{
-		Assert.assertEquals(loginpage.loginErrorText(), true);
+		Assert.assertEquals(loginpage.loginErrorDispled(), true);
 	}
 
 	@Then("the error message text should be {string}")
-	public void the_error_message_text_should_be(String expectedErrText) 
+	public void the_error_message_text_should_be(String expectedErrText) throws Exception 
 	{
 		Assert.assertEquals(loginpage.loginErrorText(), expectedErrText);
 	}
