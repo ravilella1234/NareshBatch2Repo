@@ -46,7 +46,6 @@ public class MajorMinorProgram
 	                    }
 
 	                    break;
-
 	                }
 	                System.out.print("|");
 	            }
